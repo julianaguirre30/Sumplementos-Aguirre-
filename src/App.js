@@ -9,7 +9,7 @@ const App =()=>{
     <>
        <Header/>
      
-      <ItemListContainer greeting={"Bienvenidos a la pagina"}/>
+      <ItemListContainer/>
 
        <Footer/>
         

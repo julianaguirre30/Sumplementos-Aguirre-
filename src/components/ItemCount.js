@@ -1,10 +1,11 @@
 
 import React, { useState } from "react";
+import style from './ItemCount.module.css'
 
 
-const ItemCount = ({stock, initial}) => {
-    const [contador, setContador] = useState(initial);
-    
+const ItemCount = ({stock}) => {
+    const [contador, setContador] = useState(0);
+
     const sumarUno = () => setContador(contador + 1);
     const restarUno = () => setContador(contador - 1);
     const onAdd = () => {
@@ -12,10 +13,9 @@ const ItemCount = ({stock, initial}) => {
          alert("Haz agregado el maximo permitido")}
         else if(contador===0){
             alert("El carrito esta vacio")
-
         }
         else{
-            alert('haz agregado ' + contador + ' producto/s')
+            alert('haz agregado ' + contador +' producto/s')
         }
 
         }
@@ -25,21 +25,21 @@ const ItemCount = ({stock, initial}) => {
 
     return (
 
-        <div className="  text-center ">
+        <div>
             {
-                <div>
+                <div className={style.count}>
 
-                    <button className=" btn btn-outline-primary btn-block" disabled={contador <= 0} onClick={restarUno}>
+                    <button className="m-2 btn btn-outline-primary btn-block" disabled={contador <= 0} onClick={restarUno}>
                         -
                     </button>
-                    <label className="p-2 contador mt-2">{contador}</label>
+                    <label className="contador mt-2">{contador}</label>
 
-                    <button className="btn btn-outline-primary btn-block" disabled={contador >= stock} onClick={sumarUno}>
+                    <button className="m-2 btn btn-outline-primary btn-block" disabled={contador >= stock} onClick={sumarUno}>
                         +
                     </button>
 
                     <div>
-                        <button className="btn btn-outline-primary btn-block" onClick={onAdd} >Agregar a carrito</button>
+                        <button className="m-2 btn btn-outline-primary btn-block" onClick={onAdd} >Agregar</button>
                     </div>
 
 

@@ -1,18 +1,30 @@
+import React, { useEffect, useState } from 'react'
+import AsyncMock from './AsyncMock'
+import productos from './productos'
+import ItemList from './ItemList'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import style from './Item.module.css'
 
-import React from "react"
-import ItemCount from "./ItemCount"
+function ItemListContainer() {
+    const [items, setItems] = useState([])
+
+    useEffect(() => {
+        AsyncMock(2000, productos)
+        .then(resultado => setItems(resultado))
+    }, [items])
 
 
-function ItemListContainer(props){
-    return(
-        <>
-            <h1 className="text-center">{props.greeting}</h1>
-            <ItemCount initial={0} stock={5} />
-        </>
-    )
+  return (
+    <div className={style.land}>
+        <Container fluid>
+        <Row>
+            <ItemList productos= {items}/>
+         </Row>
+        </Container>
+        
+    </div>
+  )
 }
 
-
-
-
-export default ItemListContainer 
+export default ItemListContainer

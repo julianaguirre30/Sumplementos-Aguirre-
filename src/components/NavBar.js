@@ -27,7 +27,7 @@ const NavBar=(Props)=>{
             <>
              <Navbar bg="dark" variant="dark">
                  <Container >
-                            <Nav >
+                        <Nav >
                             <Nav.Link href="#">Facebook </Nav.Link>
                             <Nav.Link href="#">Twitter</Nav.Link>
                             <Nav.Link href="#">Instagram</Nav.Link>
