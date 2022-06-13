@@ -25,10 +25,10 @@ const NavBar=(Props)=>{
     else
         return (
             <>
-             <Navbar bg="dark" variant="dark">
+             <Navbar bg="dark" variant="dark" >
                  <Container >
                         <Nav >
-                            <Nav.Link href="#">Facebook </Nav.Link>
+                            <Nav.Link className="ms-6" href="#">Facebook </Nav.Link>
                             <Nav.Link href="#">Twitter</Nav.Link>
                             <Nav.Link href="#">Instagram</Nav.Link>
                         </Nav>
