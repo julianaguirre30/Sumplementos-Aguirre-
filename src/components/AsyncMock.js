@@ -1,21 +1,28 @@
 import ItemDetail from "./ItemDetail";
+import productos from "./productos";
 
-const AsyncMock=(time,task)=>{   
+export const asyncMock=()=>{   
  return new Promise((resolve)=>{
      setTimeout(()=>{
-         resolve(task);
-     },time);
+         resolve(productos);
+     },500);
     });
 }
 
 
-export const traerDetalle= () => {
-    return new Promise((resolve) => {
+export const getProductsById = (id) => {
+    return new Promise (resolve => {
         setTimeout(() => {
-            resolve(ItemDetail);
-        }, 2000);
-    });
-};
+            resolve(productos.find(prod => prod.id === id))
+        }, 500)
+    })
+}
 
 
-export default AsyncMock; 
+export const productosCategoria=(idCategoria) => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(productos.filter(prod => prod.idCategoria === idCategoria))
+        }, 500)
+    })
+}

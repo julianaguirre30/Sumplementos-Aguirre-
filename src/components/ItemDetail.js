@@ -3,31 +3,33 @@ import Card from 'react-bootstrap/Card'
 import { Button } from 'bootstrap'
 import ItemCount from './ItemCount'
 
-function ItemDetail() {
- 
+
+function ItemDetail({title,price,descripcion1,descripcion2,descripcion3,descripcion4,pictureUrl,pictureUrl2,pictureUrl3,stock,id,option1,option2,option3}) {
+    
   return (
     <>
     <Card className='text-center'>
         <Card.Header>DETALLES</Card.Header>
         
-        <Card.Body>
+        <Card.Body >
             <div class="container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="https://olynutrition.com.ar/wp-content/uploads/2020/07/idn-isolate-1.jpg" alt="" style={{ width: '20rem' , height: "20rem" }} />
+                        <img src={pictureUrl} alt={id} style={{ width: '20rem' , height: "20rem" }} />
                     </div>
                     <div class="col-sm">
-                        <Card.Title>IDN 100% Isolate</Card.Title>
-                        <Card.Text>Objetivos principales:</Card.Text>
-                        <Card.Text>* Definición muscular.</Card.Text>
-                        <Card.Text>* Desarrollo muscular.</Card.Text>
-                        <Card.Text>* Pérdida de peso.</Card.Text>
+                        <Card.Title>{title}</Card.Title>
+                        <Card.Text>{descripcion1}</Card.Text>
+                        <Card.Text>{descripcion2}</Card.Text>
+                        <Card.Text>{descripcion3}</Card.Text>
+                        <Card.Text>{descripcion4}</Card.Text>
                         <div>
-                            <button type="button" class="btn btn-outline-dark p-1 m-1">Vainilla</button>
-                            <button type="button" class="btn btn-outline-dark p-1 m-1 ">Chocolate</button>
-                            <button type="button" class="btn btn-outline-dark p-1 m-1">Cookies</button> 
+                            <button type="button" class="btn btn-outline-dark p-1 m-1">{option1}</button>
+                            <button type="button" class="btn btn-outline-dark p-1 m-1 ">{option2}</button>
+                            <button type="button" class="btn btn-outline-dark p-1 m-1">{option3}</button> 
                         </div>
-                        <ItemCount stock={7}/>
+                        <Card.Text>{price}</Card.Text>
+                        <ItemCount stock={stock}/>
                     </div>
                 </div>
             </div>
@@ -36,14 +38,7 @@ function ItemDetail() {
         <Card.Footer className="text-muted">en stock</Card.Footer>
     </Card>
 
-  
-
-
-
     </>
-
-
-
 
   )
 }

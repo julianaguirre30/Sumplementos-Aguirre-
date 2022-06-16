@@ -1,21 +1,29 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
 import { useEffect,useState } from 'react'
-import {traerDetalle} from './AsyncMock'
+import {getProductsById} from './AsyncMock'
+import { useParams } from 'react-router-dom'
+
 
 function ItemDetailContainer() {
-    const [Detail, setDetail] = useState({})
 
-    useEffect(() => {
-        traerDetalle()
-        .then(resultado => setDetail(resultado))
-    }, {})
+    const [product, setProduct] = useState()
 
+    const { id } = useParams()
+
+
+  useEffect(() => {
+    getProductsById(parseInt(id))
+    .then(response => {
+        setProduct(response)
+    })
+    }, [])
 
   return (
-    <ItemDetail/>
+         <>
+            <ItemDetail {...product} />
+        </>
   )
-
 }
 
 export default ItemDetailContainer

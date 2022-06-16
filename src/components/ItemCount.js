@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import style from './ItemCount.module.css'
+import CartWidget from "./CartWidget";
 
 
 const ItemCount = ({stock},Detail) => {
@@ -42,11 +43,12 @@ const ItemCount = ({stock},Detail) => {
                                 <button className="m-2 btn btn-outline-secondary btn-block" onClick={onAdd} >Agregar</button>
                             </div>
         
-        
+                            <CartWidget/>
                             
         
-        
+                            
                         </div>
+                        
                     }      
                     
                 </div>

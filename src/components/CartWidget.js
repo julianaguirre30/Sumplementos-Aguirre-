@@ -1,6 +1,10 @@
+import { BsBag } from "react-icons/bs";
+
+
 const CartWidget = () => {
     return (
-        <span className="material-symbols-outlined">shopping_cart</span>
+        <BsBag color="white" size="1.5rem"/>
+     
     )
 }
 

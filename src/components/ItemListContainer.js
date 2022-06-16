@@ -1,33 +1,40 @@
 import React, { useEffect, useState } from 'react'
-import AsyncMock from './AsyncMock'
-import productos from './productos'
+import {asyncMock, productosCategoria}from './AsyncMock'
 import ItemList from './ItemList'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import style from './Item.module.css'
-import Spinner from 'react-bootstrap/Spinner'
+import {useParams} from 'react-router-dom'
+
 
 function ItemListContainer() {
-    const [items, setItems] = useState([])
+  const [items, setItems] = useState([])
 
-    useEffect(() => {
-
-        AsyncMock(2000, productos)
-        .then(resultado => setItems(resultado))
-    }, [items])
+  const { idCategoria } = useParams()
 
 
-  return (
-    <div className={style.land}>
+  useEffect(() => {
+    if(!idCategoria) {
+      asyncMock().then(res => {
+        setItems(res)
+        })
+    } else {
+        productosCategoria(idCategoria)
+        .then(res => { setItems(res)})
+    }
+}, [idCategoria])
+
+return (
+  <div className={style.land}>
       
-        <Container fluid>
-        <Row>
-            <ItemList productos= {items}/>
-         </Row>
-        </Container>
-        
-    </div>
-  )
+  <Container fluid>
+  <Row>
+      <ItemList productos= {items}/>
+   </Row>
+  </Container>
+  
+</div>
+)
 }
 
 export default ItemListContainer

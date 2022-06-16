@@ -5,14 +5,11 @@ import Item from './Item'
 function ItemList({productos}) {
   return (
     productos.map(p => 
-        <Item
-        id={p.id} 
-        title={p.title}
-        descripcion={p.descripcion}
-        price={p.price}
-        pictureUrl = {p.pictureUrl}
+        <Item 
         key={p.id}
-        stock={p.stock}
+        id={p.id}
+        {...p}
+        
         />
         )
   )
