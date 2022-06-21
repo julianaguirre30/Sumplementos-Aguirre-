@@ -1,4 +1,4 @@
-import ItemDetail from "./ItemDetail";
+
 import productos from "./productos";
 
 export const asyncMock=()=>{   

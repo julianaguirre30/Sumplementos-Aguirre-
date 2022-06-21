@@ -77,7 +77,7 @@ const productos = [
         title: 'iPad Pro',
         price: "USD $799",
         pictureUrl: 'https://www.macstation.com.ar/img/productos/2699-1.jpg',
-        pictureUrl2: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.notebookcheck.org%2Fuploads%2Ftx_nbc2%2FAppleiPadPro12__1_.jpg&imgrefurl=https%3A%2F%2Fwww.notebookcheck.org%2FApple-iPad-Pro-12-9-2021.542937.0.html&tbnid=u9JDgZXH7DOApM&vet=12ahUKEwitlpevjK74AhV5ObkGHXFJD78QMygbegUIARD5Aw..i&docid=Z_9QAMl2zyEwqM&w=980&h=784&q=ipad%20pro%20&ved=2ahUKEwitlpevjK74AhV5ObkGHXFJD78QMygbegUIARD5Aw',
+        pictureUrl2: 'https://tse1.mm.bing.net/th?id=OIP.oggMbHbjLlfy-iJSAFb-eQHaEj&pid=Api&P=0&w=282&h=173',
         pictureUrl3: 'https://www.macstation.com.ar/img/productos/2430-2.jpg',
         option1: '128GB',
         option2: ' 256GB',

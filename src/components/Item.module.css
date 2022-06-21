@@ -1,4 +1,7 @@
-
+.nav:hover{
+    transform: scale(1.1);
+    size:1.2rem;
+}
 .img{
     width: 300px;
     height: 300px;
@@ -14,14 +17,98 @@
 
 .land{
     background-color: rgb(205, 205, 205);
-    height: 100vh;
+
 }
 .nueva{
     color: orange;
-    border-radius: 0.3rem;
+    padding-top: 1.1rem;
+
     margin-left: 25px;
 }
 
 .back{
     height: 100vh;
+}
+
+.Detail{
+    border-top: 5rem;
+
+}
+
+.box{
+    margin-top: 2rem;
+
+    width: 20rem ; 
+    height: 25rem; 
+    margin:2rem;
+    box-shadow: 2px 4px 8px #323131;
+}
+
+.box:hover{
+    transform: scale(1.05);
+}
+
+.conoce{
+    align-content: center;
+    margin-top: 0.5rem;
+    margin-left: 80px;    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+
+
+
+.boximg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.imgFlex{
+    width: 100vh;
+    height: 70vh;
+    margin: 0.3rem;
+    object-fit:scale-down;
+}
+
+
+
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "iPad Watch"
+      "Iphone13 MacBook";
+  }
+  
+  .iPad { grid-area: iPad; }
+  
+  .Watch { grid-area: Watch; }
+  
+  .Iphone13 { grid-area: Iphone13; }
+  
+  .MacBook { grid-area: MacBook; }
+
+.MacBook:hover{
+    transform: scale(1.1);
+}
+
+.Watch:hover{
+    transform: scale(1.1);
+}
+
+.Iphone13:hover{
+    transform: scale(1.1);
+}
+
+.iPad:hover{
+    transform: scale(1.1);
 }
