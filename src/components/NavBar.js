@@ -20,6 +20,7 @@ const NavBar=(Props)=>{
                       <Link to='Categoria/iPad'><Nav.Link href="#features"className={style.nav}>iPad</Nav.Link></Link>
                       <Link to='Categoria/AirPods'><Nav.Link href="#features"className={style.nav}>AirPods</Nav.Link></Link>
                       <Link to='Categoria/Watch'><Nav.Link href="#features"className={style.nav}>Watch</Nav.Link></Link>
+                      <Link to='/All'><Nav.Link href="#features"className={style.nav}>All Products</Nav.Link></Link>
                     </Nav>
                    <CartWidget/>
                 </Container>
