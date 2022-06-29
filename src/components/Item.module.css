@@ -45,7 +45,8 @@
 }
 
 .box:hover{
-    transform: scale(1.05);
+    transform: scale(1.005);
+    box-shadow: 6px 8px 12px #000000;
 }
 
 .conoce{

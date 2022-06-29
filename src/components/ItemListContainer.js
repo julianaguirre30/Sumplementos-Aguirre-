@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import {asyncMock, productosCategoria}from './AsyncMock'
 import ItemList from './ItemList'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
+import {Row,Container,Button }from 'react-bootstrap'
 import style from './Item.module.css'
-import {useParams} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
+
 
 
 function ItemListContainer() {
@@ -26,11 +26,13 @@ function ItemListContainer() {
 
 return (
   <div className={style.land}>
-      
+
   <Container fluid>
-  <Row>
+ 
+    <Row>
       <ItemList productos= {items}/>
-   </Row>
+    </Row>
+
   </Container>
   
 </div>

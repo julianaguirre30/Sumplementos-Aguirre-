@@ -2,7 +2,7 @@ const productos = [
     {
         id: 1,
         title: 'MacBook Pro 13"',
-        price: "USD $1199",
+        price: "1199",
         descripcion: 'AminoX de BSN está diseñado para soportar',
         pictureUrl: 'https://www.macstation.com.ar/img/productos/small/2211-2212-2134-8.jpg',
         pictureUrl2: 'https://outtec.com.ar/wp-content/uploads/2021/08/M1.jpg',
@@ -22,7 +22,7 @@ const productos = [
     {
         id: 2,
         title: 'MacBook Air',
-        price: "USD $999",
+        price: "999",
         pictureUrl: 'https://www.ventasrosario.com.ar/wp-content/uploads/2021/01/Apple-MacBook-Air-2020-tecnolocura-portada.jpg',
         pictureUrl2: 'https://cdn-ipoint.waugi.com.ar/20596-medium_default/macbook-air-13-m1-2020-8-core-cpu-256-gb-space-gray.jpg',
         pictureUrl3: 'https://www.apple.com/newsroom/images/product/mac/standard/Apple_new-macbookair-gold-bigsur-screen_11102020_big_carousel.jpg.large.jpg',
@@ -40,7 +40,7 @@ const productos = [
     {
         id: 3,
         title: 'MacBook Pro 16"',
-        price: "USD $1499",
+        price: "1499",
         pictureUrl: 'https://www.apple.com/v/macbook-pro-14-and-16/b/images/overview/hero/hero_intro_endframe__e6khcva4hkeq_large.jpg',
         pictureUrl2: 'https://bestfixing.com/wp-content/uploads/2019/01/mbp16touch-silver-select-201911.jpeg',
         pictureUrl3: 'https://http2.mlstatic.com/D_NQ_NP_946410-MLA48352501573_112021-O.webp',
@@ -58,7 +58,7 @@ const productos = [
     {
         id: 4,
         title: 'iMac"',
-        price: "USD $1299",
+        price: "1299",
         pictureUrl: 'https://www.muycomputer.com/wp-content/uploads/2021/04/iMac-2021-1000x600.jpg',
         pictureUrl2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC2a7J9QozkzGZZ7fJg7P0RR-w9witA5sOP1OaECObOYtAY9Zsek_eu0bAQdUiqylQIfw&usqp=CAU',
         pictureUrl3: 'https://p.turbosquid.com/ts-thumb/Lk/v4hGxK/y2/appleimac2021silver3dsmodel001/jpg/1626886332/600x600/fit_q87/95e7ad64ccc6699fe16e155aa15f3da7a9091761/appleimac2021silver3dsmodel001.jpg',
@@ -75,7 +75,7 @@ const productos = [
     {
         id: 5,
         title: 'iPad Pro',
-        price: "USD $799",
+        price: "799",
         pictureUrl: 'https://www.macstation.com.ar/img/productos/2699-1.jpg',
         pictureUrl2: 'https://tse1.mm.bing.net/th?id=OIP.oggMbHbjLlfy-iJSAFb-eQHaEj&pid=Api&P=0&w=282&h=173',
         pictureUrl3: 'https://www.macstation.com.ar/img/productos/2430-2.jpg',
@@ -92,7 +92,7 @@ const productos = [
     {
         id: 6,
         title: 'iPad Air',
-        price: "USD $599",
+        price: "599",
         pictureUrl: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-air-select-202203?wid=3530&hei=4000&fmt=jpeg&qlt=90&.v=1645665079887',
         pictureUrl2: 'https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_SL1500_.jpg',
         pictureUrl3: 'https://www.k-tuin.com/media/wysiwyg/blog/2022/Marzo/ipad-air-4-vs-ipad-air-5_1.jpg',
@@ -109,7 +109,7 @@ const productos = [
     {
         id: 7,
         title: 'iPad 8th Gen',
-        price: "USD $499",
+        price: "499",
         pictureUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_kA7LIG7WCqUKJWqgJtGIADYly1DF96NPmhObl_9G5don1MoCBruviGohqxZbqT4mZvs&usqp=CAU',
         pictureUrl2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBw4XwF77LJtT9c5qiwVVot40f9hEpvznbLnAnKtjMtTPVMvusgXWPCQcvhXF-WGzoQ1Q&usqp=CAU',
         pictureUrl3: 'http://www.perusmart.com/wp-content/uploads/iPad-8th-precio-peru.jpg',
@@ -126,7 +126,7 @@ const productos = [
     {
         id: 8,
         title: 'iPhone SE',
-        price: "USD $429",
+        price: "429",
         pictureUrl: 'https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-se-family-select-202203_GEO_EMEA?wid=940&hei=1112&fmt=jpeg&qlt=90&.v=1646070492835',
         pictureUrl2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXHaWNZuOxcAggHwsVhoiR5pBlrPg-GXyQQxagz1uzB4bFqhoTLl6b3yovR8c9Dpvnwpg&usqp=CAU',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa1JBFSZRuLDYNMDrL_CQcRBXAT0rjZTuJgDPsFrCNBbjtyFPYGO9gnp3oFvx7mebu8aA&usqp=CAU',
@@ -143,7 +143,7 @@ const productos = [
     {
         id: 9,
         title: 'iPhone 12',
-        price: "USD $599",
+        price: "599",
         pictureUrl: 'https://cf.shopee.com.ar/file/9a792333affec7b914286a8d34c5648f',
         pictureUrl2: 'https://www.muycomputer.com/wp-content/uploads/2020/10/iPhone-12-est%C3%A1ndar.jpg',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmRke7YTzW7o01AAkeXQT0xO3M-MK9JFhVjbkRvCE8GOG1UByv9ZlwPUc0uWckgQsICY&usqp=CAU',
@@ -160,7 +160,7 @@ const productos = [
     {
         id: 10,
         title: 'iPhone 13',
-        price: "USD $699",
+        price: "699",
         pictureUrl: 'https://resizer.glanacion.com/resizer/eGzjmDdcbqeXgIJ3KS_THb7rx2c=/768x0/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/N32MA5DHRFGBPLDOTK664H2KCU.jpg',
         pictureUrl2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmjmocaYwLshhShTCnehNnecBkkpY1uV0sg_LWGXv3AS7j7qROpO84x2spRO5fhLWCQI&usqp=CAU',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXc7kItrLzScgMCbfIoHRfKYwWVqzlcrRrBbqtRpd9eFQBEijChnZfPxwLC1wCfpa6x8Y&usqp=CAU',
@@ -177,7 +177,7 @@ const productos = [
     {
         id: 11,
         title: 'iPhone 13 Pro',
-        price: "USD $999",
+        price: "999",
         pictureUrl: 'https://internacionalmobile.store/wp-content/uploads/2021/09/iphone13pro.jpg',
         pictureUrl2: 'https://cdn-ipoint.waugi.com.ar/22569-large_default/iphone-13-pro-256gb-silver.jpg',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMFypOxvsFjoosz2v4rmpa_iaiYMYLwrwQXGwWkHUNAXPRu1UsaFD_0U968IjppohhF1E&usqp=CAU',
@@ -194,7 +194,7 @@ const productos = [
     {
         id: 12,
         title: 'Apple Watch SE',
-        price: "USD $299",
+        price: "299",
         pictureUrl: 'https://www.venex.com.ar/products_images/1632760380_apple-watch-se-202107.jpg',
         pictureUrl2: 'https://http2.mlstatic.com/D_NQ_NP_752671-MLA47794960094_102021-V.jpg',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Qli4WOCx463h3yTB4iEAOOM7bO7w0xRycCq5DwqVGJvdsZ40ddkiYUOv87tWdF_IbZ0&usqp=CAU',
@@ -211,7 +211,7 @@ const productos = [
     {
         id: 13,
         title: 'Apple Watch Series 3',
-        price: "USD $399",
+        price: "399",
         pictureUrl: 'https://www.apple.com/newsroom/images/product/watch/standard/applewatch_series_3_two_loop_full.jpg.og.jpg?202205262042',
         pictureUrl2: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV3NDhKp6snY5Y3ngeLOXKKSk11fXwKBmQX8lmm4yraI0ja3HAn0ww_O61y64obay8wik&usqp=CAU',
         pictureUrl3: 'https://evoluciontechnology.com/wp-content/uploads/2021/06/apple-watch-s3-og-202003.jpg',
@@ -228,7 +228,7 @@ const productos = [
     {
         id: 14,
         title: 'Apple Wactch Series 7',
-        price: "USD $499",
+        price: "499",
         pictureUrl: 'https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7-availability_hero_10052021_big.jpg.slideshow-xlarge_2x.jpg',
         pictureUrl2: 'https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series7-availability_stainless-steel_10052021_big_carousel.jpg.large.jpg',
         pictureUrl3: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGAeft9w2Ah5tSYMI34G22gabNVksJcfrocR7ADetCaLLB3I7qyESO1s_V55R768D_QI&usqp=CAU',
@@ -245,7 +245,7 @@ const productos = [
     {
         id: 15,
         title: 'AirPods 2da Gen',
-        price: "USD $199",
+        price: "199",
         pictureUrl: 'https://www.apple.com/v/airpods-2nd-generation/e/images/meta/og__bz8g5g9sbyoi_overview.png?202205060638',
         pictureUrl2: 'https://lamanzanamordida.net/app/uploads-lamanzanamordida.net/2019/03/maxresdefault-3.jpg',
         pictureUrl3: 'https://d2r9epyceweg5n.cloudfront.net/stores/001/778/595/products/mv7n2ama_31-c197f955d59ffd34b216329239489151-1024-1024.jpg',
@@ -262,7 +262,7 @@ const productos = [
     {
         id: 16,
         title: 'AirPods Pro',
-        price: "USD 329",
+        price: "329",
         pictureUrl: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000',
         pictureUrl2: 'https://www.sbsmobile.com/aus/199530-thickbox_default/funda-de-silicona-para-apple-airpods-pro.jpg',
         pictureUrl3: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1591634652000',
@@ -279,7 +279,7 @@ const productos = [
     {
         id: 17,
         title: 'AirPods Max',
-        price: "USD $599",
+        price: "599",
         pictureUrl: 'https://cloudfront-us-east-1.images.arcpublishing.com/infobae/P6DXXC4C6VCHJKWCAELS7EN5SI.webp',
         pictureUrl2: 'https://cdn.shopify.com/s/files/1/0101/2522/products/airpods-max-select-skyblue-202011_1200x.png?v=1611096138',
         pictureUrl3: 'https://media.revistagq.com/photos/5fcf829e0725a0bdb22db832/master/pass/apple_airpods-max_pairing_12082020.jpg',
