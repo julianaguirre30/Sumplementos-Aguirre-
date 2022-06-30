@@ -1,0 +1,164 @@
+.bodyy{
+	min-height: 100vh;
+	background: linear-gradient(to bottom right, #878b8e, #d6d9dc);
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cartshoop{
+	margin: 5%;
+    width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.h2{
+	padding-top: 45px;
+	padding-bottom: 14px;
+}
+
+.CartContainer{
+	min-width:800px;
+	min-height:200px;
+	margin: 2%;
+	width: auto;
+	height: auto;
+	background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 30px 40px #00000033;
+}
+
+.Header{
+	margin: 2%;
+	width: 95%;
+	height: 15%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Heading{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #2F3841;
+}
+
+
+
+.Cart-Items{
+	padding: 1%;
+	height: 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.image-box{
+	width: 15%;
+	text-align: center;
+}
+
+.image-boxxx{
+	width: 80%;
+	text-align: center;
+}
+.about{
+	height: 100%;
+	width: 40%;
+}
+.title{
+	padding-top: 10px;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.subtitle{
+	line-height: 10px;
+	font-size: 13px;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	color: #000000;
+}
+
+.counter{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.count{
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #202020;
+}
+
+.prices{
+	margin-right: 2%;
+	height: 100%;
+	text-align: right;
+}
+.amount{
+	padding-top: 20px;
+	font-size: 20px;
+	font-family: 'Open Sans';
+	font-weight: 800;
+	color: #202020;
+}
+.remove{
+	padding-top: 5px;
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #E44C4C;
+	cursor: pointer;
+}
+
+
+.checkout{
+	float: right;
+	margin-right: 5%;
+	width: 30%;
+}
+.total{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.Subtotal{
+	font-size: 22px;
+	font-family: 'Open Sans';
+	font-weight: 700;
+	color: #202020;
+}
+.items{
+	font-size: 14px;
+	font-family: 'Open Sans';
+	font-weight: 500;
+	color: #909090;
+	line-height: 10px;
+}
+.total-amount{
+	font-size: 28px;
+	font-family: 'Open Sans';
+	font-weight: 900;
+	color: #202020;
+}
+
+.button{
+	margin: 5%;
+	width: 100%;
+	height: 40px;
+    background-color: #242629;
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+	color: #ede5e5;
+}
+

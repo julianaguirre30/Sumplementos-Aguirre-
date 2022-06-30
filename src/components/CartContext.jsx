@@ -24,13 +24,26 @@ export const CartContextProvider =({children})=>{
     const totalPrice =()=>{
       let total=0;
       cartList.forEach((cartList)=>{
-          total += parseInt(cartList.item.price)*parseInt(cartList.cantidad)
+          total += parseInt(cartList.item.price)*(cartList.cantidad)
       })
       return ( 
-      console.log(total)
+        total
       )
     }
     
+    const unitPrice = (price,cantidad) =>{
+      let localPrice=0;
+      localPrice = localPrice + ((price)*(cantidad))
+      return ( 
+        localPrice
+        // console.log(localPrice)
+
+        
+      )
+    
+    }
+
+
   
     const iconCart = () =>cartList.reduce((acum, valor) => acum + valor.cantidad, 0);
 
@@ -44,7 +57,7 @@ export const CartContextProvider =({children})=>{
   
 
   return(
-    <CartContext.Provider value={{addItem,cartList,iconCart,clear,totalPrice,removeItem}}>
+    <CartContext.Provider value={{addItem,cartList,iconCart,clear,totalPrice,removeItem,unitPrice}}>
       {children}
     </CartContext.Provider>
   )

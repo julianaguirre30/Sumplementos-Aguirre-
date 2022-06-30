@@ -10,7 +10,7 @@ import { CartContext} from './CartContext.jsx'
 function ItemDetail({title,price,descripcion1,descripcion2,descripcion3,descripcion4,pictureUrl,pictureUrl2,pictureUrl3,stock,id,option1,option2,option3}) {
    
 
-    const {addItem}=useContext(CartContext)
+    const {addItem,unitPrice}=useContext(CartContext)
 
     const [cambiarBoton, setCambiarBoton] = useState(0)
 
@@ -23,6 +23,11 @@ function ItemDetail({title,price,descripcion1,descripcion2,descripcion3,descripc
             cantidad: contador,
             item:{title,price,pictureUrl,stock,id,option1,option2,option3},
         });
+
+        // unitPrice({
+        //     cantidad: contador,
+        //     price: parseInt(price),
+        // })
 
       
     };

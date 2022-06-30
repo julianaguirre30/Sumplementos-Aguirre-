@@ -2,58 +2,65 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext} from './CartContext'
 import Button from 'react-bootstrap/Button'
-import Table from 'react-bootstrap/Table'
+import style from './Cart.modules.css'
+import {Animated} from "react-animated-css";
+
+
 const Cart = () => {
 
-  const { cartList,totalPrice,clear,removeItem} =useContext(CartContext);
+  const { cartList,totalPrice,clear,removeItem,unitPrice,iconCart} =useContext(CartContext);
   return (
-    <div className="container ">
+    <div className="bodyy">
       {cartList.length === 0 ? (
-        <div className="row text-center">
+        <div className="row text-center CartContainer">
           <div className="col-12">
-            <h2>Carrito vacio</h2>
+            <h2 className="h2">Carrito vacio</h2>
             <Link to={"/All"}><Button variant="dark">ir a la tienda</Button></Link>
           </div>
         </div>
       ) : (
-       <div>
-          <Table striped bordered hover>
-            <thead className="text-center">
-              <tr>
-                <th></th>
-                <th>Descripcion del producto </th>
-                <th>Cantidad</th>
-                <th>Precio por unidad</th>
-                <th>Total por producto</th>
-                <th>Eliminar</th>
-              </tr>
-            </thead>
-            <tbody >
-            {cartList.map((product) => (
-                <tr  key={product.id} className="text-center">
-                  <td><img  src={product.item.pictureUrl} alt="" width={"50px"}/></td>
-                  <td> <b>{product.item.title}</b>({product.item.option1})</td>
-                  <td><p>{product.cantidad}</p></td>
-                  <td> <p >${product.item.price} </p></td>
-                  <td><p>${product.totalPricetotal} </p></td>
-           
-                  <td><Button variant="outline-secondary"  onClick={()=>removeItem(product.item.id)} >X</Button></td>
-                </tr>
-              ))}
-              <tr>
-                <td colSpan={4}><b>Total a pagar:</b></td>
-                <td>$</td>
-                <td className="text-center"><Button variant="outline-danger" onClick={clear}>Vaciar carrito</Button>{' '}</td>
-              </tr>
-            </tbody>
-          </Table>
-          <div className="d-grid gap-2">
-          <Button variant="success" size="lg"><Link to={"/checkout"}style={{color:"white"}}>Completar formulario</Link></Button>
+  
+     <div className="cartshoop">
+        <div className="CartContainer">
+          <div className="Header">
+            <h3 className="Heading">Shopping Cart</h3>
+            <u onClick={clear} className="remove">Eliminar todo</u>
           </div>
-       </div>
-
-        
-
+          {cartList.map((product) => (
+            <Animated   animationInDuration={1600}  isVisible={true}>
+              <div className="Cart-Items">
+                <div className="image-box">
+                  <img src={product.item.pictureUrl} alt="aca va" className="image-boxxx" />
+                </div>
+                <div className="about">
+                  <h3 className="title">{product.item.title}</h3>
+                  <p className="subtitle">{product.item.option1}</p>
+                  <p className="subtitle">Cantidad:{product.cantidad}</p>
+                  <p className="subtitle">Precio por unidad: $ {product.item.price}</p>
+                </div>
+                <div className="counter"></div>
+                <div className="prices">
+                  <div className="amount">USD {(unitPrice(product.item.price, product.cantidad))}</div>
+                  <div className="remove"onClick={()=>removeItem(product.item.id)} ><u>Eliminar</u></div>
+                </div>
+              </div>
+         
+            </Animated>
+          ))}
+            
+          <div className="checkout">
+            <div className="total">
+              <div>
+                <div className="Subtotal">Total</div>
+                <div className="items">{iconCart()}{" "}item/s</div>
+              </div>
+              <div className="total-amount">USD {totalPrice()}</div>
+                </div>
+                <Link to={"/checkout"} ><button className="button">Completar formulario </button></Link>
+              </div>
+          </div>
+        </div>
+     
 
       )}
     </div>
@@ -63,5 +70,3 @@ const Cart = () => {
 
 
 export default Cart;
-
-

@@ -3,7 +3,6 @@ const productos = [
         id: 1,
         title: 'MacBook Pro 13"',
         price: "1199",
-        descripcion: 'AminoX de BSN está diseñado para soportar',
         pictureUrl: 'https://www.macstation.com.ar/img/productos/small/2211-2212-2134-8.jpg',
         pictureUrl2: 'https://outtec.com.ar/wp-content/uploads/2021/08/M1.jpg',
         pictureUrl3: 'https://images.fravega.com/f300/bd5ba75838663e3fbc72a268d4f3b1cb.jpg.webp',

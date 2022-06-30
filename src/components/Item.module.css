@@ -113,3 +113,30 @@ a:link, a:visited, a:active {
 .iPad:hover{
     transform: scale(1.1);
 }
+/* CARTTTTTTTTTTTTTT */
+
+
+.cart-page{
+    margin:80px auto;
+
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap
+}
+
+th{
+    text-align: center;
+    padding:5px;
+    color:#fff;
+    background-color:aqua;
+    font-weight: normal;
+}
