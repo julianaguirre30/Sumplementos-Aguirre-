@@ -16,8 +16,8 @@
 }
 
 .land{
-    background-color: rgb(205, 205, 205);
-
+    background: linear-gradient(to bottom , #94989b, #e3e1e1);
+    min-height: 100vh;
 }
 .nueva{
     color: orange;

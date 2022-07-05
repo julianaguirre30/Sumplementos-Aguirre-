@@ -24,27 +24,21 @@ function ItemDetail({title,price,descripcion1,descripcion2,descripcion3,descripc
             item:{title,price,pictureUrl,stock,id,option1,option2,option3},
         });
 
-        // unitPrice({
-        //     cantidad: contador,
-        //     price: parseInt(price),
-        // })
-
-      
     };
         
   return (
     <>
-    <Card className='text-center'>
+    <Card className='text-center class'>
         <Card.Header>DETALLES</Card.Header> 
         
-        <Card.Body>
+        <Card.Body >
             <div className="container">
                 <div className="row">
                     <div className="col-sm">
                       <Carousel >
-                            <Carousel.Item interval={1000}><img className="d-block  m-4" height={400} width={400} src={pictureUrl} /></Carousel.Item>
-                            <Carousel.Item interval={1000}><img className="d-block  m-4" height={400} width={400} src={pictureUrl2}/></Carousel.Item>
-                            <Carousel.Item interval={1000}><img className="d-block  m-4" height={400} width={400} src={pictureUrl3}/></Carousel.Item>
+                            <Carousel.Item interval={1000}><img className="detailimg"  src={pictureUrl} /></Carousel.Item>
+                            <Carousel.Item interval={1000}><img className="detailimg"  src={pictureUrl2}/></Carousel.Item>
+                            <Carousel.Item interval={1000}><img className="detailimg" src={pictureUrl3}/></Carousel.Item>
                         </Carousel> 
                       
                     </div>

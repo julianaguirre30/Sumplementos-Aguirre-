@@ -1,12 +1,23 @@
 .bodyy{
 	min-height: 100vh;
-	background: linear-gradient(to bottom right, #878b8e, #d6d9dc);
+	background: linear-gradient(to bottom , #878b8e, #d6d9dc);
 	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+
+.detailimg{
+	margin: 4px;
+	height: 20rem;
+	width: 20rem;
+
+}
+
+.class{
+	min-height: 100vh;
+}
 .cartshoop{
 	margin: 5%;
     width: auto;

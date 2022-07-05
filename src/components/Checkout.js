@@ -69,7 +69,8 @@ function Checkout() {
   </Modal.Body>
 
 </Modal.Dialog>
-  
+   
+{/* <img src="https://i.ibb.co/SV323Lk/camion.gif" alt="camion" /> */}
 
     </>
   )

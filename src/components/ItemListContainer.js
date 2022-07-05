@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import {asyncMock, productosCategoria}from './AsyncMock'
 import ItemList from './ItemList'
-import {Row,Container,Button }from 'react-bootstrap'
+import {Row,Container}from 'react-bootstrap'
 import style from './Item.module.css'
-import {Link, useParams} from 'react-router-dom'
+import { useParams} from 'react-router-dom'
+import { collectionProducts} from '../firebase'
+import { getDocs,query,where } from 'firebase/firestore'
 
 
 
@@ -14,14 +15,24 @@ function ItemListContainer() {
 
 
   useEffect(() => {
-    if(!idCategoria) {
-      asyncMock().then(res => {
-        setItems(res)
+
+
+
+      const ref = idCategoria
+      ? query(collectionProducts,where("idCategoria","==",idCategoria))
+      : collectionProducts;
+
+      getDocs(ref).then((response)=>{
+        const products = response.docs.map((doc)=>{
+          return{
+            id: doc.id,
+            ...doc.data(),
+          }
+
         })
-    } else {
-        productosCategoria(idCategoria)
-        .then(res => { setItems(res)})
-    }
+        setItems(products)
+      })
+
 }, [idCategoria])
 
 return (

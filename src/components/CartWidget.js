@@ -1,7 +1,7 @@
-import { useState } from "react";
+
 import { BsBag } from "react-icons/bs";
 import {FaShoppingBag} from "react-icons/fa";
-import {Animated} from "react-animated-css";
+
 
 export const CartWidget = ()=> {
 

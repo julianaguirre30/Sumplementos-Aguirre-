@@ -15,7 +15,8 @@ const Cart = () => {
         <div className="row text-center CartContainer">
           <div className="col-12">
             <h2 className="h2">Carrito vacio</h2>
-            <Link to={"/All"}><Button variant="dark">ir a la tienda</Button></Link>
+            <div>  <img src="https://i.ibb.co/FbGJ7pc/empty-cart-3.png" alt="carrito" className="m-4" /></div>
+            <Link to={"/All"}><Button variant="dark" className="m-4">ir a la tienda</Button></Link>
           </div>
         </div>
       ) : (
