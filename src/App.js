@@ -9,6 +9,7 @@ import Checkout from "./components/Checkout";
 import { CartContextProvider } from "./components/CartContext";
 
 
+
 const App =()=>{
 
     return (
@@ -26,6 +27,7 @@ const App =()=>{
                     <Route path="/All" element={<ItemListContainer />}/>  
                     <Route path='/cart' element={<Cart/>}/>
                     <Route path='/checkout' element={<Checkout/>}/>
+     
                     <Route/>
                 </Routes>
             </CartContextProvider>

@@ -36,7 +36,7 @@ export const CartContextProvider =({children})=>{
       localPrice = localPrice + ((price)*(cantidad))
       return ( 
         localPrice
-        // console.log(localPrice)
+
 
         
       )
