@@ -36,8 +36,8 @@ $ npm i
 $ npm start
 ````
 
-### Video del funcionamiento :https://www.youtube.com/watch?v=kxqDbftMIX4
+### Video del funcionamiento: https://www.youtube.com/watch?v=kxqDbftMIX4
 
-### Link de la pagina: https://applereseller.netlify.app/
+### Link de la pagina: https://apple-argentina.netlify.app/
 
 
