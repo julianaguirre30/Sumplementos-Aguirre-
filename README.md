@@ -36,11 +36,8 @@ $ npm i
 $ npm start
 ````
 
-### Gif del funcionamiento:
+### Video del funcionamiento :https://www.youtube.com/watch?v=kxqDbftMIX4
 
-[![Funcionamiento e-commerce](https://s4.gifyu.com/images/2022-07-25-15-13-47.gif)](https://gifyu.com/image/SNgnK)
-
-
-### Link: https://applereseller.netlify.app/
+### Link de la pagina: https://applereseller.netlify.app/
 
 
