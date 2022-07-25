@@ -8,6 +8,16 @@
 }
 
 
+.carritofinal{
+	size: auto;
+	display:block;
+	margin:auto;
+}
+
+.final{
+	background: linear-gradient(to bottom , #878b8e, #d6d9dc);
+}
+
 .detailimg{
 	margin: 4px;
 	height: 20rem;
@@ -32,7 +42,7 @@
 }
 
 .CartContainer{
-	min-width:800px;
+	min-width:40vh;
 	min-height:200px;
 	margin: 2%;
 	width: auto;

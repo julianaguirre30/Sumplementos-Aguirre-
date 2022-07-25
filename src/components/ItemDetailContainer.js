@@ -1,11 +1,10 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
 import { useEffect,useState } from 'react'
-import {getProductsById} from './AsyncMock'
 import { useParams } from 'react-router-dom'
 import { collectionProducts, db } from '../firebase'
 import { getDocs, collection, getDoc, doc } from 'firebase/firestore'
-
+import {Animated} from "react-animated-css";
 
 function ItemDetailContainer() {
 

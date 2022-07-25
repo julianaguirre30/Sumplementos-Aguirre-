@@ -2,6 +2,7 @@
   
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {Animated} from "react-animated-css";
 
 const ItemCount = ({ item, stock, initial, onAdd  }) => {
     const [contador, setContador] = useState(0);

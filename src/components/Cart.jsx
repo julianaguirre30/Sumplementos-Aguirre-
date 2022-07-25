@@ -28,9 +28,9 @@ const Cart = () => {
             <u onClick={clear} className="remove">Eliminar todo</u>
           </div>
           {cartList.map((product) => (
-            <Animated   animationInDuration={1600}  isVisible={true}>
-              <div className="Cart-Items">
-                <div className="image-box">
+            <Animated  animationInDuration={1600}  isVisible={true} key={product.item.title}>
+              <div className="Cart-Items"  >
+                <div className="image-box" >
                   <img src={product.item.pictureUrl} alt="aca va" className="image-boxxx" />
                 </div>
                 <div className="about">

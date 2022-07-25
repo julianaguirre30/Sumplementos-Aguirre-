@@ -7,7 +7,7 @@ import{Link} from "react-router-dom"
 import { CartContext } from './CartContext'
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase'
-
+import {Animated} from "react-animated-css";
 function Checkout() {
   const [send,setSend]=useState('')
 
@@ -56,10 +56,11 @@ function Checkout() {
   }
 
   if(send !==''){
-    return(<>
-      <p className='text-center m-4'>tu pedido fue enviado con el numero: <b>{send}</b></p>
-      <img src="https://i.ibb.co/SV323Lk/camion.gif" alt="camion" />
-    </>
+    return(<div >
+      <p className='text-center m-1'><b>LA COMPRA SE REALIZO CON EXITO!</b></p>
+      <p className='text-center '>tu pedido fue enviado con el numero: <b>{send}</b></p>
+      <img src="https://i.ibb.co/SV323Lk/camion.gif" alt="camion" className='carritofinal '/>
+    </div>
     )
   }
 

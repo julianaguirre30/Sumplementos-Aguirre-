@@ -1,6 +1,19 @@
 .nav:hover{
-    transform: scale(1.1);
-    size:1.2rem;
+
+  
+    color:  rgb(255, 255, 255);
+}
+
+
+.nav{
+    color: rgba(255, 255, 255, 0.714);
+    padding-left: 7px;
+}
+
+.brand{
+    size:40px;
+    color: white;
+    padding-bottom: 3px;
 }
 .img{
     width: 300px;
@@ -83,36 +96,16 @@ a:link, a:visited, a:active {
 .container {  display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px 10px;
     grid-auto-flow: row;
     grid-template-areas:
       "iPad Watch"
       "Iphone13 MacBook";
-  }
-  
-  .iPad { grid-area: iPad; }
-  
-  .Watch { grid-area: Watch; }
-  
-  .Iphone13 { grid-area: Iphone13; }
-  
-  .MacBook { grid-area: MacBook; }
+} 
 
-.MacBook:hover{
-    transform: scale(1.1);
-}
 
-.Watch:hover{
-    transform: scale(1.1);
-}
+  
+ 
 
-.Iphone13:hover{
-    transform: scale(1.1);
-}
-
-.iPad:hover{
-    transform: scale(1.1);
-}
 /* CARTTTTTTTTTTTTTT */
 
 
@@ -140,3 +133,8 @@ th{
     background-color:aqua;
     font-weight: normal;
 }
+
+.img-index{
+    height: 100px;
+}
+

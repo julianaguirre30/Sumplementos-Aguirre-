@@ -1,4 +1,4 @@
-import {Navbar,Container,Nav} from "react-bootstrap"
+import {Navbar,Container, Nav} from "react-bootstrap"
 import {CartWidget,CartWidgetUSe} from "./CartWidget.js"
 import {BsApple} from "react-icons/bs"
 import{Link} from "react-router-dom"
@@ -12,38 +12,26 @@ const NavBar=(Props)=>{
     if(Props.Header)
         return (
         <>
-          {/* <Navbar bg="dark" variant="dark" sticky="top">
-                <Container >
-                <Link to='/'> <Navbar.Brand href="#home"><BsApple className={style.nav}/></Navbar.Brand></Link>
-
-                    <Nav className="me-auto">
-                      <Link to='Categoria/iPhone'> <Nav.Link href="#features"className={style.nav} >iPhone</Nav.Link></Link>
-                      <Link to='Categoria/Mac'><Nav.Link href="#features"className={style.nav}>Mac</Nav.Link></Link>
-                      <Link to='Categoria/iPad'><Nav.Link href="#features"className={style.nav}>iPad</Nav.Link></Link>
-                      <Link to='Categoria/AirPods'><Nav.Link href="#features"className={style.nav}>AirPods</Nav.Link></Link>
-                      <Link to='Categoria/Watch'><Nav.Link href="#features"className={style.nav}>Watch</Nav.Link></Link>
-                      <Link to='/All'><Nav.Link href="#features"className={style.nav}>All Products</Nav.Link></Link>
-                    </Nav>
-                   <CartWidget/>
-                </Container>
-            </Navbar> */}
+ 
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
   <Container>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Link to='/' ><BsApple className={style.brand}/></Link>
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-
-         <Link to='/'> <Navbar.Brand href="#home"><BsApple className={style.nav}/></Navbar.Brand></Link>
-       <Link to='Categoria/iPhone'> <Nav.Link href="#features"className={style.nav} >iPhone</Nav.Link></Link>
-        <Link to='Categoria/Mac'><Nav.Link href="#features"className={style.nav}>Mac</Nav.Link></Link>
-        <Link to='Categoria/iPad'><Nav.Link href="#features"className={style.nav}>iPad</Nav.Link></Link>
-        <Link to='Categoria/AirPods'><Nav.Link href="#features"className={style.nav}>AirPods</Nav.Link></Link>
-        <Link to='Categoria/Watch'><Nav.Link href="#features"className={style.nav}>Watch</Nav.Link></Link>
-        <Link to='/All'><Nav.Link href="#features"className={style.nav}>All Products</Nav.Link></Link>
+       <Link to='Categoria/iPhone' href="#features" className={style.nav} >iPhone</Link>
+        <Link to='Categoria/Mac' href="#features" className={style.nav}>Mac</Link>
+        <Link to='Categoria/iPad' href="#features"className={style.nav}>iPad</Link>
+        <Link to='Categoria/AirPods' href="#features" className={style.nav}>AirPods</Link>
+        <Link to='Categoria/Watch' href="#features"  className={style.nav}>Watch</Link>
+        <Link to='/All' className={style.nav}> All Products </Link>
     </Nav>
   
   </Navbar.Collapse>
-  <Link  className="link" exact to={'/cart' }>
+
+
+
+  <Link  className="link"  to={'/cart' }>
         <div className="text-center ">
         
         {cartList.length === 0 ?
@@ -58,7 +46,6 @@ const NavBar=(Props)=>{
         </div>
 
       </Link>
-
   </Container>
 </Navbar>       
 

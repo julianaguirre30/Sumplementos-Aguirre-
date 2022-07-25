@@ -5,7 +5,7 @@ import style from './Item.module.css'
 import { useParams} from 'react-router-dom'
 import { collectionProducts} from '../firebase'
 import { getDocs,query,where } from 'firebase/firestore'
-
+import {Animated} from "react-animated-css";
 
 
 function ItemListContainer() {

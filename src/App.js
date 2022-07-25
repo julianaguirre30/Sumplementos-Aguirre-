@@ -7,6 +7,7 @@ import {BrowserRouter,Routes, Route} from "react-router-dom";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import { CartContextProvider } from "./components/CartContext";
+import {Animated} from "react-animated-css";
 
 
 
