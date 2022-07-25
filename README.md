@@ -38,9 +38,8 @@ $ npm start
 
 ### Gif del funcionamiento:
 
-![Presentacion proyecto ecommerce](https://i.ibb.co/N9Xgyfc/2022-07-25-12-36-10.gif)
+[![funcionamiento e-commerce](https://i.im.ge/2022/07/25/FLk6OD.gif)](https://im.ge/i/FLk6OD)
 
-
-Link: https://applereseller.netlify.app/
+### Link: https://applereseller.netlify.app/
 
 
