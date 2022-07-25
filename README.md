@@ -37,8 +37,8 @@ $ npm start
 ````
 
 ### Gif del funcionamiento:
-![funcionamiento e-commerce](https://i.ibb.co/FWFS9t0/2022-07-25-15-13-47.gif)
 
+[![Funcionamiento e-commerce](https://s4.gifyu.com/images/2022-07-25-15-13-47.gif)](https://gifyu.com/image/SNgnK)
 
 
 ### Link: https://applereseller.netlify.app/
